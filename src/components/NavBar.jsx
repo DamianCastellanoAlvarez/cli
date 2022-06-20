@@ -1,7 +1,6 @@
 import React from "react"
 import './NavBar.css'
 import logo from '../assets/Logo.png'
-import carrito from '../assets/carrito.svg'
 
 
 const NavBar = () =>{
@@ -9,9 +8,6 @@ const NavBar = () =>{
         <>
             <div>
                 <img src={logo} alt="logo" />
-            </div>
-            <div>
-                <img className="carrito" src={carrito} alt="carito" />
             </div>
                 <nav>
                     <ul>
