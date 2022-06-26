@@ -1,7 +1,7 @@
 import React from "react"
-import './NavBar.css'
-import logo from '../assets/Logo.png'
-
+import '../navBar/NavBar.jsx'
+import logo from '../../assets/Logo.png'
+import '../navBar/NavBar.css'
 
 const NavBar = () =>{
     return (
