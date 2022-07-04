@@ -44,12 +44,6 @@ return (
                 </>
                 );
             }
-            return <>
-            <h2 key={hierbas.id} className="nombre">
-                    {hierbas.name}</h2>
-                    <h2 key={hierbas.id} className="price">
-                    {hierbas.price}</h2>
-                    </>
         })}
     </>
 )

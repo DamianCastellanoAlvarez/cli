@@ -1,7 +1,16 @@
-const productos = [
-    { name: 'Yerba', price: "$500", stock: 5, id: 1 },
-    { name: 'Stevia', price: "$300", stock: 5, id: 2 },
-    { name: 'Te', price: "$400", stock: 5, id: 3 },
-];
+import React from "react";
 
-export default productos;
+
+
+
+export const Item = ({ hierbas }) => {
+    return <>
+    <h2 key={hierbas.id} className="nombre">
+            {hierbas.name}</h2>
+            <h2 key={hierbas.id} className="price">
+            {hierbas.price}</h2>
+            </>
+}
+
+export default Item
+
