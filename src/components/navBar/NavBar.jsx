@@ -2,6 +2,10 @@ import React from "react"
 import '../navBar/NavBar.jsx'
 import logo from '../../assets/Logo.png'
 import '../navBar/NavBar.css'
+import CartWidget from '../CartWidget/cartWidget'
+
+
+
 
 const NavBar = () =>{
     return (
@@ -11,6 +15,7 @@ const NavBar = () =>{
             </div>
                 <nav>
                     <ul>
+                        
                         <li>
                             <a href="#">Inicio</a>
                         </li>
@@ -24,9 +29,11 @@ const NavBar = () =>{
                             <a href="./contactos.html">Contacto</a>
                         </li>
                     </ul>
+                    <CartWidget />
                 </nav>
         </>
     )
 }
+
 
 export default NavBar

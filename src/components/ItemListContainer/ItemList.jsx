@@ -1,42 +1,12 @@
-import React, { useEffect, useState } from 'react'
-import Item from '../ItemListContainer/Item'
+import React from "react";
 
 
 
-export const ItemList = () => {
 
-
-const promesa = new Promise((res, rej) => {
-    setTimeout(() => {
-        res(Item);
-    }, 3000);
-});
-
-
-const [loading, setLoading] = useState(false);
-
-useEffect(() => {
-    setLoading(true);
-    promesa.then((response) => {
-    setLoading(false);
-    setHierbas(response);
-    });
-}, []);
-
-const [hierbas, setHierbas] = useState([]);
-
-useEffect(() => {
-    promesa.then(res => {
-        setHierbas(res);
-    }).catch(err => {
-        console.log(err);
-    });
-}, []);
-
-
-return (
+export const ItemList = ({ productos }) => {
+    return (
     <>
-        {hierbas.map((hierbas)=>{
+        {productos.map((productos)=>{
             if (loading) {
                 return (
                 <>
@@ -46,7 +16,9 @@ return (
             }
         })}
     </>
-)
+)           
 }
+
+
 
 export default ItemList
